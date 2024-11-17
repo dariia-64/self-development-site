@@ -1,0 +1,119 @@
+/* Основний контейнер для блогу */
+.blog-container {
+    padding: 2rem 1rem;
+    background-color: #fff; /* Білий фон */
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок сторінки */
+.blog-container h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Оформлення карточок блогу */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f7ebe6; /* Легкий відтінок фону */
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Зображення блогу */
+.blog-card img {
+    width: 100%; /* Адаптивна ширина для мобільних пристроїв */
+    max-width: 250px; /* Максимальна ширина зображення */
+    height: auto; /* Пропорційна висота */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Вирівнювання по центру */
+}
+
+/* Текстовий контент блогу */
+.blog-content {
+    text-align: left;
+    padding-top: 1rem;
+}
+
+/* Категорія блогу */
+.category {
+    display: inline-block;
+    background-color: #FFC0CB; /* Рожевий фон для категорії */
+    color: #333;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+/* Заголовки блогу */
+.blog-content h2 {
+    font-size: 1.5em;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.blog-content h2 a {
+    text-decoration: none;
+    color: #ff8fa0;
+}
+
+.blog-content h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Опис блогу */
+.blog-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Кнопка "Читати далі" */
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #FFC0CB;
+    color: #333;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #ff8fa0;
+}
+
+/* Медіа-запити для адаптації */
+@media (min-width: 768px) {
+    .blog-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .blog-card img {
+        width: 30%; /* Зменшення ширини для великих екранів */
+        max-width: none;
+    }
+
+    .blog-content {
+        width: 70%;
+        padding-left: 1.5rem;
+    }
+}

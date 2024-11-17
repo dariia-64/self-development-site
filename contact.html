@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="courses.html">Курси</a></li>
+                <li><a href="experts.html">Експерти</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="test.html">Тестування</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Контакти</h1>
+        <p>Зв'яжіться з нами:</p>
+        <ul>
+            <li><b>Email:</b> <a href="mailto:info@example.com">alisadasha@KI-22.com</a></li>
+            <li><b>Телефон:</b> +380 123 456 789</li>
+            <li><b>Соціальні мережі:</b></li>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </ul>
+
+        <h2>Форма зворотного зв’язку</h2>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Електронна адреса:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Ваше питання:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сайт-помічник для саморозвитку</p>
+    </footer>
+</body>
+</html>

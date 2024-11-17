@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси для Саморозвитку</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">persona.</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="resources.html">Ресурси</a></li>
+            <li><a href="experts.html">Експерти</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="test.html" class="test-button">Тест</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+ 
+    <section class="courses">
+        <h2>Наші Курси для Саморозвитку</h2>
+        <p>Оберіть один із наших курсів для покращення своїх знань та навичок у різних сферах.</p>
+        <div class="course-list">
+            <div class="course">
+                <h3>Курс Тайм-менеджменту</h3>
+                <p>Для всіх, хто хоче навчитися правильно планувати свій час та підвищити продуктивність.</p>
+                <p class="price">від 3000 грн/міс</p>
+                <a href="#" class="detail-button" onclick="showDetails('time-management')">Детальніше</a>
+                <div class="course-details" id="time-management">
+                    <h4>Деталі Курсу Тайм-менеджменту</h4>
+                    <p>Цей курс включає в себе такі теми, як постановка цілей, пріоритезація задач, управління часом і використання ефективних технік планування.</p>
+                    <a href="#" class="close-button" onclick="hideDetails('time-management')">Закрити</a>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Курс Здорового Способу Життя</h3>
+                <p>Для тих, хто прагне покращити фізичне та ментальне здоров'я через правильне харчування та фізичну активність.</p>
+                <p class="price">від 2500 грн/міс</p>
+                <a href="#" class="detail-button" onclick="showDetails('healthy-living')">Детальніше</a>
+                <div class="course-details" id="healthy-living">
+                    <h4>Деталі Курсу Здорового Способу Життя</h4>
+                    <p>Курс охоплює теми правильного харчування, фізичної активності, психічного здоров'я, та як створити здоровий режим дня.</p>
+                    <a href="#" class="close-button" onclick="hideDetails('healthy-living')">Закрити</a>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Курс Софт-Скілів</h3>
+                <p>Для розвитку комунікативних навичок, лідерства та емоційного інтелекту.</p>
+                <p class="price">від 2700 грн/міс</p>
+                <a href="#" class="detail-button" onclick="showDetails('soft-skills')">Детальніше</a>
+                <div class="course-details" id="soft-skills">
+                    <h4>Деталі Курсу Софт-Скілів</h4>
+                    <p>Включає теми комунікації, лідерства, вирішення конфліктів, роботи в команді та розвитку емоційного інтелекту.</p>
+                    <a href="#" class="close-button" onclick="hideDetails('soft-skills')">Закрити</a>
+                </div>
+            </div>
+            <div class="course">
+                <h3>Курс Самопрезентації та Публічних Виступів</h3>
+                <p>Для всіх, хто бажає впевнено виступати перед аудиторією та ефективно представляти свої ідеї.</p>
+                <p class="price">від 3200 грн/міс</p>
+                <a href="#" class="detail-button" onclick="showDetails('public-speaking')">Детальніше</a>
+                <div class="course-details" id="public-speaking">
+                    <h4>Деталі Курсу Самопрезентації та Публічних Виступів</h4>
+                    <p>Курс допоможе розвинути навички публічних виступів, презентацій та самопрезентації перед різними аудиторіями.</p>
+                    <a href="#" class="close-button" onclick="hideDetails('public-speaking')">Закрити</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Помічник для саморозвитку</p>
+</footer>
+
+</body>
+</html>
